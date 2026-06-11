@@ -3,396 +3,552 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Costco Business Center Westminster | Bulk Food, Fresh Produce & Food Court</title>
-    <meta name="description" content="Costco Business Center in Westminster, CA. Bulk food, fresh bakery, food court favorites, premium meat, organic produce & more. Grand opening specials available now. Call (657) 400-7006.">
-    <meta name="keywords" content="Costco Business Center Westminster, bulk food Westminster, fresh produce, food court, bakery, deli, organic produce, premium meat, Costco food">
+    <title>Costco Business Center Westminster | Your Business Supply Warehouse | (657) 400-7006</title>
+    <meta name="description" content="Costco Business Center Westminster — Bulk food, fresh bakery, premium meat, office supplies & restaurant essentials. Save on every aisle. Call (657) 400-7006.">
+    <meta name="keywords" content="Costco Business Center Westminster, bulk supplies, wholesale food, restaurant supplies, office supplies, bulk buying Westminster CA">
+    <meta name="robots" content="index, follow">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23da291c'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='12' fill='white'%3ECC%3C/text%3E%3C/svg%3E">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Costco Business Center Westminster — Your Business Supply Warehouse">
+    <meta property="og:description" content="Bulk food, fresh bakery, restaurant supplies & office essentials. Business-focused savings at Costco Business Center Westminster. Call (657) 400-7006.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://costcobusinesscenterwestminster.com">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Costco Business Center Westminster">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Store",
+        "name": "Costco Business Center Westminster",
+        "telephone": "+1-657-400-7006",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "13225 Beach Blvd",
+            "addressLocality": "Westminster",
+            "addressRegion": "CA",
+            "postalCode": "92683",
+            "addressCountry": "US"
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+                "opens": "10:00",
+                "closes": "20:30"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Saturday","Sunday"],
+                "opens": "09:30",
+                "closes": "18:00"
+            }
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.2",
+            "reviewCount": "300"
+        },
+        "priceRange": "$$"
+    }
+    </script>
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Scroll Progress Bar -->
     <div class="scroll-progress" id="scrollProgress"></div>
 
-    <div class="top-bar">
-        <div class="container top-bar-inner">
-            <div class="top-bar-left">
-                <span class="top-bar-item">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-                    <a href="tel:6574007006">(657) 400-7006</a>
-                </span>
-                <span class="top-bar-item">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                    13225 Beach Blvd, Westminster, CA
-                </span>
-            </div>
-            <div class="top-bar-right">
-                <span class="top-bar-item">Mon-Fri 10AM-8:30PM, Sat 9:30AM-6PM, Sun 10AM-6PM</span>
-            </div>
-        </div>
-    </div>
-
+    <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="container nav-inner">
-            <a href="#" class="logo">
-                <span class="logo-icon">CC</span>
+            <a href="#" class="logo" aria-label="Costco Business Center Home">
+                <div class="logo-box">CC</div>
                 <div class="logo-text">
                     <span class="logo-name">Costco Business Center</span>
-                    <span class="logo-tagline">Westminster. Bulk. Fresh. Value.</span>
+                    <span class="logo-sub">Westminster</span>
                 </div>
             </a>
-            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#departments">Departments</a></li>
+                <li><a href="#savings">Savings</a></li>
+                <li><a href="#business">For Business</a></li>
+                <li><a href="#membership">Membership</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact" class="nav-cta">Visit Us</a></li>
+            </ul>
+            <div class="nav-status">
+                <span class="status-dot" id="statusDot"></span>
+                <span id="statusText">Checking...</span>
+            </div>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
                 <span></span><span></span><span></span>
             </button>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#menu" data-section="menu">Menu</a></li>
-                <li><a href="#why-us" data-section="why-us">Why Us</a></li>
-                <li><a href="#reviews" data-section="reviews">Reviews</a></li>
-                <li><a href="#about" data-section="about">About</a></li>
-                <li><a href="#contact" class="nav-cta" data-section="contact">Visit Us</a></li>
-            </ul>
         </div>
     </nav>
 
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#departments">Departments</a>
+        <a href="#savings">Savings</a>
+        <a href="#business">For Business</a>
+        <a href="#membership">Membership</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact" class="mobile-menu-cta">Visit Us — (657) 400-7006</a>
+    </div>
+
+    <!-- 1. WAREHOUSE HERO -->
     <section class="hero" id="hero">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-            <div class="hero-particles" id="heroParticles"></div>
-            <div class="hero-badge">Grand Opening Specials Available Now</div>
-            <h1>Bulk Food, Fresh Produce &<br><span class="highlight">Food Court Favorites.</span></h1>
-            <p class="hero-sub">Westminster's go-to destination for wholesale food, fresh bakery, premium meat, and the famous Costco food court. Stock up on quality at prices that keep your budget happy. Your one-stop shop for everything delicious.</p>
-            <div class="hero-ctas">
-                <a href="tel:6574007006" class="btn btn-primary btn-lg btn-pulse">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-                    Call (657) 400-7006
-                </a>
-                <a href="#contact" class="btn btn-secondary btn-lg btn-pulse">Visit Us Today</a>
-            </div>
-            <div class="hero-trust">
-                <div class="trust-item">
-                    <div class="trust-score">4.2</div>
-                    <div class="trust-label">Yelp Rating<br><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div>
-                </div>
-                <div class="trust-divider"></div>
-                <div class="trust-item">
-                    <div class="trust-score">1000+</div>
-                    <div class="trust-label">Products<br>In Stock</div>
-                </div>
-                <div class="trust-divider"></div>
-                <div class="trust-item">
-                    <div class="trust-score">Low</div>
-                    <div class="trust-label">Wholesale<br>Prices</div>
-                </div>
-                <div class="trust-divider"></div>
-                <div class="trust-item">
-                    <div class="trust-score">Fresh</div>
-                    <div class="trust-label">Baked<br>Daily</div>
-                </div>
-            </div>
+        <div class="hero-shelf" aria-hidden="true">
+            <div class="shelf-row shelf-row-1"></div>
+            <div class="shelf-row shelf-row-2"></div>
+            <div class="shelf-row shelf-row-3"></div>
         </div>
-    </section>
-
-    <section class="urgency-banner" id="urgency-banner">
-        <div class="container">
-            <div class="urgency-content">
-                <div class="urgency-text">
-                    <span class="urgency-label">GRAND OPENING SPECIALS</span>
-                    <strong>Incredible deals</strong> on bulk food, fresh produce, and food court favorites. Visit now before specials end!
+        <div class="container hero-inner">
+            <div class="hero-content reveal">
+                <div class="hero-badge">&#128722; Your Business Supply Warehouse</div>
+                <h1 class="reveal stagger-1">
+                    Bulk Savings.<br>
+                    <span class="hero-red">Business Results.</span>
+                </h1>
+                <p class="hero-sub reveal stagger-2">
+                    Westminster's only Costco Business Center. Expanded food selection, restaurant supplies, office essentials, and commercial-grade products you won't find at standard Costco locations. More aisles, more bulk, more savings for your business and your family.
+                </p>
+                <div class="hero-actions reveal stagger-3">
+                    <a href="tel:6574007006" class="btn btn-red btn-lg">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                        Call (657) 400-7006
+                    </a>
+                    <a href="#contact" class="btn btn-outline btn-lg">Get Directions</a>
                 </div>
-                <a href="tel:6574007006" class="btn btn-white">Call Now</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="services" id="menu">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">What We Serve</span>
-                <h2>Fresh Food & Wholesale<br>favorites Under One Roof</h2>
-                <p>From the food court to the fresh bakery, from bulk organic produce to premium cuts of meat. Everything you need to feed your family or your business, all at unbeatable Costco prices.</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+                <div class="hero-trust reveal stagger-4">
+                    <div class="hero-trust-item">
+                        <span class="hero-trust-num">1000+</span>
+                        <span class="hero-trust-label">Products In Stock</span>
                     </div>
+                    <div class="hero-trust-divider"></div>
+                    <div class="hero-trust-item">
+                        <span class="hero-trust-num">4.2</span>
+                        <span class="hero-trust-label">Yelp Rating</span>
+                    </div>
+                    <div class="hero-trust-divider"></div>
+                    <div class="hero-trust-item">
+                        <span class="hero-trust-num">&#128176;</span>
+                        <span class="hero-trust-label">Wholesale Prices</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. URGENCY STRIP -->
+    <section class="urgency-strip" id="urgency">
+        <div class="container urgency-inner">
+            <span class="urgency-icon">&#128293;</span>
+            <span class="urgency-text"><strong>Grand Opening Specials</strong> — Incredible deals on bulk food, fresh produce & food court favorites. Limited time!</span>
+            <a href="tel:6574007006" class="urgency-cta">Call Now</a>
+        </div>
+    </section>
+
+    <!-- 3. DEPARTMENT DIRECTORY -->
+    <section class="departments-section" id="departments">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">&#128722; Departments</span>
+                <h2 class="section-heading">Your Business.<br>Every Department.</h2>
+                <p class="section-sub">More food, more variety, more of what your business needs. Every aisle is packed with commercial-grade products at warehouse prices.</p>
+            </div>
+            <div class="dept-grid">
+                <div class="dept-card reveal stagger-1">
+                    <div class="dept-icon">&#127838;</div>
                     <h3>Fresh Bakery & Deli</h3>
-                    <p>Artisan breads baked fresh daily. Rotisserie chickens ready to grab and go. Premium deli meats sliced to your thickness. The bakery section alone is worth the trip.</p>
+                    <p>Artisan breads baked daily. Rotisserie chickens. Premium deli meats sliced to order. The bakery alone is worth the trip.</p>
+                    <span class="dept-tag">Fresh Daily</span>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 002-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 00-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/></svg>
-                    </div>
-                    <h3>Food Court Favorites</h3>
-                    <p>The legendary $1.50 hot dog and soda combo. Giant slices of pizza. Creamy acai bowls. Churros. The food court deals that made Costco famous are all here.</p>
+                <div class="dept-card reveal stagger-2">
+                    <div class="dept-icon">&#127829;</div>
+                    <h3>Food Court</h3>
+                    <p>The legendary $1.50 hot dog combo. Giant pizza slices. Acai bowls. Churros. The deals that made Costco famous.</p>
+                    <span class="dept-tag">$1.50 Hot Dog Combo</span>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22c4-4 8-7.5 8-12a8 8 0 10-16 0c0 4.5 4 8 8 12z"/><circle cx="12" cy="10" r="3"/></svg>
-                    </div>
+                <div class="dept-card reveal stagger-3">
+                    <div class="dept-icon">&#127807;</div>
                     <h3>Bulk Organic Produce</h3>
-                    <p>Fresh fruits and vegetables in bulk quantities at wholesale prices. Organic options available. Stock your kitchen with farm-fresh produce that lasts.</p>
+                    <p>Fresh fruits and vegetables in bulk at wholesale prices. Organic options. Stock your kitchen with farm-fresh produce.</p>
+                    <span class="dept-tag">Organic Available</span>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
-                    </div>
+                <div class="dept-card reveal stagger-4">
+                    <div class="dept-icon">&#129385;</div>
                     <h3>Premium Meat & Seafood</h3>
-                    <p>USDA choice and prime cuts. Wild-caught seafood. Restaurant-quality proteins at warehouse prices. Butcher-quality meat without the butcher markup.</p>
+                    <p>USDA choice and prime cuts. Wild-caught seafood. Restaurant-quality proteins at warehouse prices.</p>
+                    <span class="dept-tag">Restaurant Grade</span>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 8h1a4 4 0 110 8h-1"/><path d="M3 8h14v9a4 4 0 01-4 4H7a4 4 0 01-4-4V8z"/><line x1="6" y1="2" x2="6" y2="4"/><line x1="10" y1="2" x2="10" y2="4"/><line x1="14" y1="2" x2="14" y2="4"/></svg>
-                    </div>
-                    <h3>Prepared Meals & Rotisserie</h3>
-                    <p>Ready-to-eat meals for busy families. The famous Costco rotisserie chicken. Heat-and-serve dinners that taste homemade. Dinner solved in minutes, not hours.</p>
+                <div class="dept-card reveal stagger-5">
+                    <div class="dept-icon">&#127860;</div>
+                    <h3>Prepared Meals</h3>
+                    <p>Ready-to-eat meals. Famous rotisserie chicken. Heat-and-serve dinners. Dinner solved in minutes, not hours.</p>
+                    <span class="dept-tag">Grab & Go</span>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
-                    </div>
+                <div class="dept-card reveal stagger-6">
+                    <div class="dept-icon">&#127470;&#127475;</div>
                     <h3>International Foods</h3>
-                    <p>Explore flavors from around the world. Japanese snacks, Mexican sauces, European chocolates, Korean kimchi, and more. Global cuisine at your fingertips.</p>
+                    <p>Japanese snacks, Mexican sauces, Korean kimchi, European chocolates, Vietnamese specialties. Global cuisine at your fingertips.</p>
+                    <span class="dept-tag">Vietnamese Specialties</span>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 2h8l4 10H4L8 2z"/><path d="M4 12v6a2 2 0 002 2h12a2 2 0 002-2v-6"/><path d="M10 16h4"/></svg>
-                    </div>
+                <div class="dept-card reveal stagger-7">
+                    <div class="dept-icon">&#127863;</div>
                     <h3>Wine & Spirits</h3>
-                    <p>Curated wine selections from Napa to Bordeaux. Craft spirits and popular liquors at prices that beat most retailers. Your next dinner party starts here.</p>
+                    <p>Curated wines from Napa to Bordeaux. Craft spirits at prices that beat most retailers. Your next dinner party starts here.</p>
+                    <span class="dept-tag">Curated Selection</span>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20"/><path d="M2 12h20"/><rect x="4" y="4" width="16" height="16" rx="2"/></svg>
-                    </div>
+                <div class="dept-card reveal stagger-8">
+                    <div class="dept-icon">&#129482;</div>
                     <h3>Frozen & Dairy</h3>
-                    <p>Stock your freezer with premium frozen meals, ice cream, and convenience foods. Fresh dairy including milk, cheese, and yogurt in family-sized packs.</p>
+                    <p>Premium frozen meals, ice cream, and convenience foods. Fresh dairy including milk, cheese, and yogurt in family-sized packs.</p>
+                    <span class="dept-tag">Bulk Sizes</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="why-us" id="why-us">
+    <!-- 4. BUSINESS SAVINGS CALCULATOR -->
+    <section class="savings-section" id="savings">
         <div class="container">
-            <div class="why-us-grid">
-                <div class="why-us-content">
-                    <span class="section-tag">What Makes Us Special</span>
-                    <h2>More Than a Store.<br>It's a Food Destination.</h2>
-                    <p>Costco Business Center is not your regular Costco. It's built for businesses and food lovers who want bulk quantities, commercial-grade products, and the freshest ingredients. This location focuses on food, with expanded deli, bakery, and fresh departments you won't find at standard locations.</p>
-                    <div class="why-features">
-                        <div class="why-feature">
-                            <div class="why-feature-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <div class="savings-grid">
+                <div class="savings-content reveal-left">
+                    <span class="section-tag">&#128176; Savings Calculator</span>
+                    <h2>See How Much<br>Your Business Saves</h2>
+                    <p>Business Center prices are significantly lower than standard retail. Whether you're stocking a restaurant, office, or breakroom, the savings add up fast. Our expanded bulk selection means fewer trips and bigger savings.</p>
+                    <div class="savings-examples">
+                        <div class="savings-example">
+                            <span class="savings-example-label">50 lb bag Jasmine Rice</span>
+                            <div class="savings-example-bar">
+                                <div class="savings-bar-retail" style="width: 80%"><span>Retail: $45</span></div>
+                                <div class="savings-bar-costco" style="width: 50%"><span>Ours: $28</span></div>
                             </div>
+                            <span class="savings-save">Save $17</span>
+                        </div>
+                        <div class="savings-example">
+                            <span class="savings-example-label">Commercial Deli Meat (5 lb)</span>
+                            <div class="savings-example-bar">
+                                <div class="savings-bar-retail" style="width: 75%"><span>Retail: $38</span></div>
+                                <div class="savings-bar-costco" style="width: 45%"><span>Ours: $22</span></div>
+                            </div>
+                            <span class="savings-save">Save $16</span>
+                        </div>
+                        <div class="savings-example">
+                            <span class="savings-example-label">Bulk Paper Products (Case)</span>
+                            <div class="savings-example-bar">
+                                <div class="savings-bar-retail" style="width: 70%"><span>Retail: $32</span></div>
+                                <div class="savings-bar-costco" style="width: 40%"><span>Ours: $18</span></div>
+                            </div>
+                            <span class="savings-save">Save $14</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="savings-card reveal-right">
+                    <div class="savings-card-header">
+                        <h3>Annual Savings Estimate</h3>
+                    </div>
+                    <div class="savings-card-body">
+                        <div class="savings-input-group">
+                            <label for="businessType">Business Type</label>
+                            <select id="businessType">
+                                <option value="restaurant">Restaurant / Food Service</option>
+                                <option value="office">Office / Breakroom</option>
+                                <option value="catering">Catering / Events</option>
+                                <option value="retail">Retail / Convenience Store</option>
+                            </select>
+                        </div>
+                        <div class="savings-input-group">
+                            <label for="monthlySpend">Monthly Supply Budget</label>
+                            <select id="monthlySpend">
+                                <option value="500">$500 - $1,000</option>
+                                <option value="1000">$1,000 - $3,000</option>
+                                <option value="3000">$3,000 - $5,000</option>
+                                <option value="5000">$5,000+</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-red btn-full" id="calcBtn">Calculate Savings</button>
+                        <div class="savings-result" id="savingsResult">
+                            <div class="savings-result-label">Estimated Annual Savings</div>
+                            <div class="savings-result-num" id="savingsNum">$0</div>
+                            <div class="savings-result-note">Based on average 30-40% savings vs. retail pricing</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. FOR YOUR BUSINESS CATEGORIES -->
+    <section class="business-section" id="business">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">&#127970; For Your Business</span>
+                <h2 class="section-heading">Built for Business.<br>Not Just for Families.</h2>
+                <p class="section-sub">Costco Business Center is designed differently. More commercial products, bigger quantities, and specialty items standard Costco locations don't carry.</p>
+            </div>
+            <div class="business-grid">
+                <div class="business-card reveal stagger-1">
+                    <div class="business-card-icon">&#127860;</div>
+                    <h3>Restaurant & Food Service</h3>
+                    <p>Commercial-grade ingredients, bulk spices, restaurant-sized packaging, and specialty foods. Everything your kitchen needs at prices that protect your margins.</p>
+                    <ul>
+                        <li>Bulk cooking oils & sauces</li>
+                        <li>Commercial-sized packaging</li>
+                        <li>Specialty & ethnic ingredients</li>
+                        <li>Fresh produce by the case</li>
+                    </ul>
+                </div>
+                <div class="business-card reveal stagger-2">
+                    <div class="business-card-icon">&#128188;</div>
+                    <h3>Office & Breakroom</h3>
+                    <p>Stock your breakroom for less. Coffee, snacks, beverages, paper products, and cleaning supplies in bulk. Keep your team fueled and your budget intact.</p>
+                    <ul>
+                        <li>Coffee & beverage supplies</li>
+                        <li>Snack packs & breakroom essentials</li>
+                        <li>Paper products & disposables</li>
+                        <li>Cleaning supplies in bulk</li>
+                    </ul>
+                </div>
+                <div class="business-card reveal stagger-3">
+                    <div class="business-card-icon">&#127978;</div>
+                    <h3>Convenience & Retail</h3>
+                    <p>Stock your shelves with popular brands at wholesale prices. Candy, snacks, beverages, and grab-and-go items that move fast and keep your customers coming back.</p>
+                    <ul>
+                        <li>Candy & snack multipacks</li>
+                        <li>Beverages by the pallet</li>
+                        <li>Grab-and-go items</li>
+                        <li>Popular brands at wholesale</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. MEMBERSHIP BENEFITS -->
+    <section class="membership-section" id="membership">
+        <div class="container">
+            <div class="membership-grid">
+                <div class="membership-content reveal-left">
+                    <span class="section-tag">&#128099; Membership</span>
+                    <h2>One Membership.<br>Warehouse of Savings.</h2>
+                    <p>Your Costco membership unlocks access to Business Center exclusives, bulk pricing, and products you won't find at standard locations. Whether you're a business owner or a savvy shopper, membership pays for itself on the first trip.</p>
+                    <div class="membership-perks">
+                        <div class="perk">
+                            <span class="perk-check">&#10003;</span>
                             <div>
                                 <strong>Business Center Exclusives</strong>
-                                <p>Products and bulk sizes you won't find at regular Costco locations. Commercial-grade ingredients, restaurant supplies, and industrial quantities for serious food shoppers.</p>
+                                <span>Products and bulk sizes only available at Business Center locations</span>
                             </div>
                         </div>
-                        <div class="why-feature">
-                            <div class="why-feature-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                            </div>
-                            <div>
-                                <strong>Fresh Rotisserie Daily</strong>
-                                <p>The famous Costco rotisserie chicken, plus prepared meals and sides ready when you are. Pick up dinner on the way home and skip the cooking tonight.</p>
-                            </div>
-                        </div>
-                        <div class="why-feature">
-                            <div class="why-feature-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                            </div>
-                            <div>
-                                <strong>Unbeatable Wholesale Prices</strong>
-                                <p>Buy in bulk and save big. Our wholesale pricing on food, beverages, and essentials means more value in every cart. Quality does not have to cost more.</p>
-                            </div>
-                        </div>
-                        <div class="why-feature">
-                            <div class="why-feature-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                            </div>
+                        <div class="perk">
+                            <span class="perk-check">&#10003;</span>
                             <div>
                                 <strong>Expanded Food Selection</strong>
-                                <p>More food, more variety, more of what you love. From international delicacies to local favorites, our food aisles are packed with options you will not find elsewhere.</p>
+                                <span>More food aisles, more variety, more international products</span>
+                            </div>
+                        </div>
+                        <div class="perk">
+                            <span class="perk-check">&#10003;</span>
+                            <div>
+                                <strong>Wholesale Pricing</strong>
+                                <span>Save 30-40% compared to standard retail on every trip</span>
+                            </div>
+                        </div>
+                        <div class="perk">
+                            <span class="perk-check">&#10003;</span>
+                            <div>
+                                <strong>Works at All Costco Locations</strong>
+                                <span>Use your membership at any Costco warehouse worldwide</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="why-us-visual">
-                    <div class="stats-card">
-                        <div class="stats-number" data-count="1000">1000+</div>
-                        <div class="stats-label">Food Products In Stock</div>
-                        <div class="stats-divider"></div>
-                        <div class="stats-number" data-count="50">50+</div>
-                        <div class="stats-label">Fresh Bakery Items Daily</div>
-                        <div class="stats-divider"></div>
-                        <div class="stats-number" data-count="30">30+</div>
-                        <div class="stats-label">International Food Brands</div>
-                        <div class="stats-divider"></div>
-                        <div class="stats-number" data-count="0" data-suffix="Low">Low</div>
-                        <div class="stats-label">Wholesale Prices Everyday</div>
+                <div class="membership-cards reveal-right">
+                    <div class="mem-card">
+                        <div class="mem-card-tier">Gold Star</div>
+                        <div class="mem-card-price">$65<span>/year</span></div>
+                        <ul>
+                            <li>Access to all Costco locations</li>
+                            <li>Business Center access</li>
+                            <li>Online shopping</li>
+                            <li>Pharmacy & optical</li>
+                            <li>Food court access</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline btn-full">Get Directions</a>
+                    </div>
+                    <div class="mem-card mem-featured">
+                        <div class="mem-card-badge">Best for Business</div>
+                        <div class="mem-card-tier">Executive</div>
+                        <div class="mem-card-price">$130<span>/year</span></div>
+                        <ul>
+                            <li>Everything in Gold Star</li>
+                            <li><strong>2% Annual Reward</strong> (up to $1,250)</li>
+                            <li>Extra benefits & discounts</li>
+                            <li>Business Center priority</li>
+                            <li>Costco Services discounts</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-red btn-full">Visit Today</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="testimonials" id="reviews">
+    <!-- 7. BULK PRICING SHOWCASE -->
+    <section class="bulk-section" id="bulk">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Customer Reviews</span>
-                <h2>What Our Shoppers Say.<br>Real Reviews From Real People.</h2>
-                <p>Don't just take our word for it. Read what customers in Westminster are saying about their experience at the Costco Business Center.</p>
+            <div class="section-header reveal">
+                <span class="section-tag">&#128230; Bulk Pricing</span>
+                <h2 class="section-heading">More for Less.<br>Every Aisle.</h2>
+                <p class="section-sub">See the difference Business Center pricing makes. These are real prices on real products our customers buy every day.</p>
             </div>
-            <div class="reviews-grid" id="reviewsGrid">
-                <div class="review-card">
+            <div class="bulk-grid">
+                <div class="bulk-card reveal stagger-1">
+                    <div class="bulk-name">Rotisserie Chicken</div>
+                    <div class="bulk-prices">
+                        <span class="bulk-retail">Elsewhere: $8.99</span>
+                        <span class="bulk-ours">$4.99</span>
+                    </div>
+                    <div class="bulk-save">Save 44%</div>
+                </div>
+                <div class="bulk-card reveal stagger-2">
+                    <div class="bulk-name">Hot Dog + Soda Combo</div>
+                    <div class="bulk-prices">
+                        <span class="bulk-retail">Elsewhere: $5.99</span>
+                        <span class="bulk-ours">$1.50</span>
+                    </div>
+                    <div class="bulk-save">Save 75%</div>
+                </div>
+                <div class="bulk-card reveal stagger-3">
+                    <div class="bulk-name">18" Pizza (Whole)</div>
+                    <div class="bulk-prices">
+                        <span class="bulk-retail">Elsewhere: $18.99</span>
+                        <span class="bulk-ours">$9.95</span>
+                    </div>
+                    <div class="bulk-save">Save 48%</div>
+                </div>
+                <div class="bulk-card reveal stagger-4">
+                    <div class="bulk-name">25 lb Flour</div>
+                    <div class="bulk-prices">
+                        <span class="bulk-retail">Elsewhere: $16.99</span>
+                        <span class="bulk-ours">$9.49</span>
+                    </div>
+                    <div class="bulk-save">Save 44%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. REVIEWS -->
+    <section class="reviews-section" id="reviews">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">&#11088; Reviews</span>
+                <h2 class="section-heading">What Our Shoppers Say</h2>
+                <p class="section-sub">Real reviews from real business owners and families in Westminster.</p>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card reveal stagger-1">
                     <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <p class="review-text">"This Business Center has so much more food variety than a regular Costco. The bakery section alone is worth the trip. I found items here I have never seen at other locations. The international foods aisle is incredible."</p>
-                    <div class="review-author">
-                        <div class="review-avatar">Y</div>
-                        <div>
-                            <strong>Yelp Verified Review</strong>
-                            <span>5-Star Review</span>
-                        </div>
+                    <p class="review-text">"This Business Center has so much more food variety than a regular Costco. The bakery section alone is worth the trip. The international foods aisle is incredible."</p>
+                    <div class="review-footer">
+                        <span class="review-author">Yelp Verified</span>
+                        <span class="review-source">5-Star</span>
                     </div>
                 </div>
-                <div class="review-card">
+                <div class="review-card reveal stagger-2">
                     <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <p class="review-text">"I run a small catering business and this place is a lifesaver. Bulk ingredients, fresh produce, and the prices are unbeatable. The deli section has restaurant-quality meats at wholesale prices. My clients are always impressed."</p>
-                    <div class="review-author">
-                        <div class="review-avatar">Y</div>
-                        <div>
-                            <strong>Yelp Verified Review</strong>
-                            <span>Maria T., Business Customer</span>
-                        </div>
+                    <p class="review-text">"I run a small catering business and this place is a lifesaver. Bulk ingredients, fresh produce, and the prices are unbeatable. The deli section has restaurant-quality meats."</p>
+                    <div class="review-footer">
+                        <span class="review-author">Maria T., Business Owner</span>
+                        <span class="review-source">Yelp</span>
                     </div>
                 </div>
-                <div class="review-card">
+                <div class="review-card reveal stagger-3">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="review-text">"The rotisserie chicken is the best deal in town. I come here specifically for the fresh bakery items and prepared meals. Makes weeknight dinners so much easier."</p>
+                    <div class="review-footer">
+                        <span class="review-author">Sandra L., Westminster</span>
+                        <span class="review-source">Verified</span>
+                    </div>
+                </div>
+                <div class="review-card reveal stagger-4">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="review-text">"Way better food selection than regular Costco. They have commercial-sized items and unique international products. The produce section is huge and always fresh."</p>
+                    <div class="review-footer">
+                        <span class="review-author">David K., Garden Grove</span>
+                        <span class="review-source">Yelp</span>
+                    </div>
+                </div>
+                <div class="review-card reveal stagger-5">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="review-text">"Love the food court here! The pizza is always hot and the hot dog combo can't be beat anywhere. Lines move fast. Perfect for a quick lunch while shopping."</p>
+                    <div class="review-footer">
+                        <span class="review-author">James R., Local Shopper</span>
+                        <span class="review-source">Yelp</span>
+                    </div>
+                </div>
+                <div class="review-card reveal stagger-6">
                     <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
-                    <p class="review-text">"Love the food court here! The pizza is always hot and the hot dog combo cannot be beat anywhere. The lines move fast and the staff is friendly. Perfect place to grab lunch while shopping."</p>
-                    <div class="review-author">
-                        <div class="review-avatar">Y</div>
-                        <div>
-                            <strong>Yelp Verified Review</strong>
-                            <span>James R., Local Shopper</span>
-                        </div>
+                    <p class="review-text">"This location is always well-stocked. The wine selection is impressive and prices are incredible. I always leave with a full cart and spend less than I would elsewhere."</p>
+                    <div class="review-footer">
+                        <span class="review-author">Anna P., Huntington Beach</span>
+                        <span class="review-source">Verified</span>
                     </div>
                 </div>
-                <div class="review-card">
-                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <p class="review-text">"The rotisserie chicken is the best deal in town. I come here specifically for the fresh bakery items and the prepared meals. Makes weeknight dinners so much easier for our family of five."</p>
-                    <div class="review-author">
-                        <div class="review-avatar">V</div>
-                        <div>
-                            <strong>Verified Customer Review</strong>
-                            <span>Sandra L., Westminster</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="review-card">
-                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <p class="review-text">"Way better selection of food than regular Costco. They have commercial-sized items and unique international products. The produce section is huge and everything is always fresh. This is my go-to for party food."</p>
-                    <div class="review-author">
-                        <div class="review-avatar">Y</div>
-                        <div>
-                            <strong>Yelp Verified Review</strong>
-                            <span>David K., Garden Grove</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="review-card">
-                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
-                    <p class="review-text">"This location is always well-stocked and the staff is helpful. The wine selection is impressive and the prices are incredible. I always leave with a full cart and still spend less than I would elsewhere."</p>
-                    <div class="review-author">
-                        <div class="review-avatar">V</div>
-                        <div>
-                            <strong>Verified Customer Review</strong>
-                            <span>Anna P., Huntington Beach</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="reviews-cta">
-                <p>Join thousands of happy shoppers. Experience the Costco Business Center difference.</p>
-                <a href="tel:6574007006" class="btn btn-primary">Call (657) 400-7006</a>
             </div>
         </div>
     </section>
 
-    <section class="about" id="about">
+    <!-- 9. CTA -->
+    <section class="cta-section" id="cta">
         <div class="container">
-            <div class="about-grid">
-                <div class="about-content">
-                    <span class="section-tag">About Us</span>
-                    <h2>Westminster's Food<br>Warehouse Destination</h2>
-                    <p>Costco Business Center in Westminster is designed with food lovers and business owners in mind. Unlike standard Costco warehouses, this location features an expanded food selection with commercial-grade products, bulk ingredients, and specialty items you will not find anywhere else.</p>
-                    <p>From the moment you walk in, you will notice the difference. Wider food aisles, a larger fresh department, and a deli and bakery that rival specialty shops. Whether you are stocking a restaurant, planning a party, or feeding a large family, this is the place to get more for less.</p>
-                    <p>With the famous Costco food court, fresh rotisserie chickens, and grand opening specials, there has never been a better time to visit. Come see why Westminster shoppers make this their regular stop.</p>
-                    <div class="trust-badges">
-                        <span class="trust-badge">Costco Quality</span>
-                        <span class="trust-badge">Business Center</span>
-                        <span class="trust-badge">Wholesale Prices</span>
-                    </div>
-                </div>
-                <div class="about-details">
-                    <div class="detail-card">
-                        <h4>Expanded Food Selection</h4>
-                        <p>More food products than standard Costco locations. Commercial-sized packaging, specialty ingredients, and restaurant supplies all under one roof. Save time and money on every trip.</p>
-                    </div>
-                    <div class="detail-card">
-                        <h4>Fresh Bakery & Rotisserie</h4>
-                        <p>Breads, cakes, and pastries baked fresh every morning. Rotisserie chickens ready when you need them. Prepared meals and sides that make dinner effortless.</p>
-                    </div>
-                    <div class="detail-card">
-                        <h4>Food Court Favorites</h4>
-                        <p>The deals that made Costco famous. $1.50 hot dog and soda combo, giant pizza slices, acai bowls, and more. Quick, delicious, and easy on the wallet.</p>
-                    </div>
-                </div>
+            <h2 class="reveal">Stock Up Today.</h2>
+            <p class="reveal stagger-1">Grand opening specials won't last. Visit Costco Business Center Westminster and see the difference bulk makes.</p>
+            <div class="cta-actions reveal stagger-2">
+                <a href="tel:6574007006" class="btn btn-red btn-lg">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                    Call Now: (657) 400-7006
+                </a>
+                <a href="#contact" class="btn btn-outline btn-lg">Get Directions</a>
             </div>
+            <p class="cta-note reveal stagger-3">Grand opening specials available for a <strong>limited time</strong>!</p>
         </div>
     </section>
 
-    <section class="cta-section" id="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Stock Up on Fresh Food Today.<br>Grand Opening Specials Won't Last!</h2>
-                <p>From the food court to the fresh produce aisle, Costco Business Center has everything you need at prices that make sense. Visit us today and see the difference.</p>
-                <div class="cta-buttons">
-                    <a href="tel:6574007006" class="btn btn-primary btn-lg btn-pulse">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-                        Call Now: (657) 400-7006
-                    </a>
-                    <a href="#contact" class="btn btn-secondary btn-lg btn-pulse">Visit Us Today</a>
-                </div>
-                <p class="cta-note">Grand opening specials available for a <strong>limited time</strong>!</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact" id="contact">
+    <!-- 10. CONTACT -->
+    <section class="contact-section" id="contact">
         <div class="container">
             <div class="contact-grid">
-                <div class="contact-info">
-                    <span class="section-tag">Get In Touch</span>
-                    <h2>Visit Us in Westminster</h2>
-                    <p>Come explore the expanded food selection, grab lunch at the food court, or stock up on bulk essentials. We are here to help you save on every trip.</p>
+                <div class="contact-info reveal-left">
+                    <span class="section-tag">&#128205; Visit Us</span>
+                    <h2>Your Business Supply<br>Warehouse Awaits</h2>
+                    <p>Come explore the expanded food selection, grab lunch at the food court, or stock up on bulk essentials. We're here to help you save on every trip.</p>
                     <div class="contact-details">
                         <div class="contact-item">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#005daa" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                            <div class="contact-item-icon">&#128222;</div>
                             <div>
                                 <strong>Phone</strong>
                                 <a href="tel:6574007006">(657) 400-7006</a>
                             </div>
                         </div>
                         <div class="contact-item">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#005daa" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <div class="contact-item-icon">&#128205;</div>
                             <div>
                                 <strong>Address</strong>
                                 <span>13225 Beach Blvd<br>Westminster, CA 92683</span>
                             </div>
                         </div>
                         <div class="contact-item">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#005daa" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                            <div class="contact-item-icon">&#128336;</div>
                             <div>
                                 <strong>Hours</strong>
                                 <span>Mon-Fri: 10:00 AM - 8:30 PM<br>Sat: 9:30 AM - 6:00 PM<br>Sun: 10:00 AM - 6:00 PM</span>
@@ -400,9 +556,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="contact-form-wrapper">
+                <div class="contact-form-wrapper reveal-right">
+                    <h3>Request Information</h3>
                     <form class="contact-form" id="contactForm">
-                        <h3>Request Information</h3>
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="name">Full Name *</label>
@@ -414,79 +570,73 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="john@email.com">
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="orderType">Inquiry Type</label>
-                                <select id="orderType" name="orderType">
-                                    <option value="">Select type...</option>
-                                    <option value="general">General Inquiry</option>
-                                    <option value="catering">Catering / Bulk Order</option>
-                                    <option value="bakery">Bakery Order</option>
-                                    <option value="business">Business Account</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="partySize">Party Size / Quantity</label>
-                                <input type="text" id="partySize" name="partySize" placeholder="e.g. 50 people, 10 trays...">
-                            </div>
+                            <label for="inquiryType">Inquiry Type</label>
+                            <select id="inquiryType" name="inquiryType">
+                                <option value="">Select type...</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="catering">Catering / Bulk Order</option>
+                                <option value="bakery">Bakery Order</option>
+                                <option value="business">Business Account</option>
+                            </select>
                         </div>
                         <div class="form-group">
                             <label for="message">Details</label>
                             <textarea id="message" name="message" rows="3" placeholder="Tell us what you need..."></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-full">Send Inquiry</button>
-                        <p class="form-note">We will respond within 1 business day.</p>
+                        <button type="submit" class="btn btn-red btn-full">Send Inquiry</button>
+                        <p class="form-note">We'll respond within 1 business day.</p>
                     </form>
+                    <div class="form-success" id="formSuccess">
+                        <h4>Inquiry Received!</h4>
+                        <p>We'll get back to you shortly.</p>
+                    </div>
                 </div>
             </div>
-            <div class="map-wrapper">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.5!2d-118.0062!3d33.7592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd26e4e8e8e8e8%3A0x123456789!2s13225+Beach+Blvd%2C+Westminster%2C+CA+92683!5e0!3m2!1sen!2sus!4v1234567890" width="100%" height="350" style="border:0; border-radius: 16px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="map-wrapper reveal">
+                <iframe src="https://maps.google.com/maps?q=13225+Beach+Blvd+Westminster+CA+92683&output=embed" width="100%" height="350" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy" title="Costco Business Center Location"></iframe>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
                     <div class="logo">
-                        <span class="logo-icon">CC</span>
+                        <div class="logo-box">CC</div>
                         <div class="logo-text">
                             <span class="logo-name">Costco Business Center</span>
-                            <span class="logo-tagline">Westminster. Bulk. Fresh. Value.</span>
+                            <span class="logo-sub">Westminster</span>
                         </div>
                     </div>
-                    <p>Westminster's premier destination for bulk food, fresh produce, and food court favorites. Wholesale prices, Costco quality.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#menu">Menu Highlights</a></li>
-                        <li><a href="#why-us">Why Us</a></li>
-                        <li><a href="#reviews">Reviews</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+                    <p>Westminster's premier destination for bulk food, fresh produce, restaurant supplies, and food court favorites. Wholesale prices, Costco quality.</p>
                 </div>
                 <div class="footer-links">
                     <h4>Departments</h4>
                     <ul>
-                        <li><a href="#menu">Bakery & Deli</a></li>
-                        <li><a href="#menu">Food Court</a></li>
-                        <li><a href="#menu">Meat & Seafood</a></li>
-                        <li><a href="#menu">Produce</a></li>
-                        <li><a href="#menu">Wine & Spirits</a></li>
+                        <li><a href="#departments">Bakery & Deli</a></li>
+                        <li><a href="#departments">Food Court</a></li>
+                        <li><a href="#departments">Meat & Seafood</a></li>
+                        <li><a href="#departments">Produce</a></li>
+                        <li><a href="#departments">International Foods</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>For Business</h4>
+                    <ul>
+                        <li><a href="#business">Restaurant Supply</a></li>
+                        <li><a href="#business">Office & Breakroom</a></li>
+                        <li><a href="#business">Convenience Store</a></li>
+                        <li><a href="#membership">Membership</a></li>
+                        <li><a href="#savings">Savings Calculator</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
-                    <h4>Contact Us</h4>
+                    <h4>Contact</h4>
                     <p><a href="tel:6574007006">(657) 400-7006</a></p>
                     <p>13225 Beach Blvd<br>Westminster, CA 92683</p>
-                    <p>Mon-Fri: 10AM - 8:30PM</p>
+                    <p>Mon-Fri: 10AM - 8:30PM<br>Sat-Sun: 9:30AM - 6PM</p>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -495,14 +645,16 @@
         </div>
     </footer>
 
+    <!-- Mobile CTA -->
     <div class="mobile-cta" id="mobileCta">
-        <a href="tel:6574007006" class="btn btn-primary btn-full">
+        <a href="tel:6574007006" class="btn btn-red btn-full">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-            Call to Order: (657) 400-7006
+            Call: (657) 400-7006
         </a>
     </div>
 
-    <button class="back-to-top" id="backToTop" aria-label="Back to top">&uarr;</button>
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">&#8593;</button>
 
     <script src="script.js"></script>
 </body>
